@@ -8,4 +8,4 @@ phases:
       - aws --version
       - pip install -Iv awscli==1.14.34
       - aws --version
-      - aws appsync list-graphql-apis
+      - aws appsync list-graphql-apis --debug
