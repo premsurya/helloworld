@@ -8,6 +8,5 @@ phases:
       - aws --version
       - pip install -Iv awscli==1.14.34
       - aws --version
-      - sudo apt-get install python-dev libssl-dev libffi-dev
-      - sudo pip install -U pyopenssl==0.13.1 pyasn1 ndg-httpsclient
+      - sudo pip install -U pyopenssl==0.13.1 pyasn1 ndg-httpsclient cryptography
       - aws appsync list-graphql-apis --debug
