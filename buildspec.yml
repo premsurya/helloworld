@@ -1,0 +1,11 @@
+version 0.2
+
+
+phases:
+  build:
+    commands:
+      - echo Entering Build.
+      - aws --version
+      - pip install -Iv awscli==1.14.34
+      - aws --version
+      - aws appsync list-graphql-apis
