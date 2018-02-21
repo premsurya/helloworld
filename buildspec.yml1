@@ -6,6 +6,7 @@ phases:
     commands:
       - echo Entering Build.
       - aws --version
-      - pip install --upgrade awscli
+      - pip install -Iv awscli==1.14.34
       - aws --version
+      - sudo pip install -U pyopenssl==0.13.1 pyasn1 ndg-httpsclient cryptography
       - aws appsync list-graphql-apis --debug
