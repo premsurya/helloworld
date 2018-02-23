@@ -8,13 +8,5 @@ phases:
       - aws --version
       - pip install --upgrade awscli
       - aws --version
-      - wget https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz
-      - tar -zxvf Python-2.7.12.tgz
-      - pwd
-      - ls -lrta
-      - cd Python-2.7.12
-      - ./configure
-      - make
-      - make install
-      - python --version
-      - aws appsync list-graphql-apis --debug
+      - pip install PyOpenSSL -y
+      - aws appsync list-graphql-apis 
