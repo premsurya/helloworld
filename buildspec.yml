@@ -8,4 +8,5 @@ phases:
       - aws --version
       - pip install --upgrade awscli
       - aws --version
+      - apt-get install python -y
       - #aws appsync list-graphql-apis --debug
