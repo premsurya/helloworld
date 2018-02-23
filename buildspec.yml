@@ -9,7 +9,6 @@ phases:
       - pip install --upgrade awscli
       - aws --version
       - pip install PyOpenSSL 
-      - apt-get remove python-requests -y
-      - pip install --ignore-installed requests
+      - pip install --upgrade $(pip list --outdated | awk '{print $1}' | tr '\n' ' ')
       - uname -a
       - aws appsync list-graphql-apis 
