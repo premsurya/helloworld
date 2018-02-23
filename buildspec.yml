@@ -17,4 +17,4 @@ phases:
       - make
       - make install
       - python --version
-      - #aws appsync list-graphql-apis --debug
+      - aws appsync list-graphql-apis --debug
