@@ -12,8 +12,9 @@ phases:
       - tar -zxvf Python-2.7.12.tgz
       - pwd
       - ls -lrta
-      - #./configure
-      - #make
-      - #make install
+      - cd Python-2.7.12
+      - ./configure
+      - make
+      - make install
       - python --version
       - #aws appsync list-graphql-apis --debug
