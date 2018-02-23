@@ -8,4 +8,4 @@ phases:
       - aws --version
       - pip install --upgrade awscli
       - aws --version
-      - aws appsync list-graphql-apis --debug
+      - #aws appsync list-graphql-apis --debug
