@@ -8,10 +8,7 @@ phases:
       - aws --version
       - pip install --upgrade awscli
       - aws --version
-      - easy_install pyOpenSSl
-      - easy_install ndg-httpsclient
-      - easy_install pyasn1
-      - uname -a
       - pip install requests
-      - #aws appsync list-graphql-apis 
-      - python test.py
+      - sudo pip install --upgrade pyOpenSSL
+      - aws appsync list-graphql-apis 
+      - #python test.py
