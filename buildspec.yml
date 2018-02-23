@@ -8,5 +8,10 @@ phases:
       - aws --version
       - pip install --upgrade awscli
       - aws --version
-      - sudo apt-get upgrade -y
+      - wget https://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz
+      - tar -zxvf Python-2.7.12.tgz
+      - ./configure
+      - make
+      - make install
+      - python --version
       - #aws appsync list-graphql-apis --debug
