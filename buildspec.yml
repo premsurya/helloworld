@@ -9,6 +9,7 @@ phases:
       - pip install --upgrade awscli
       - aws --version
       - pip install requests
+      - pip show requests
       - sudo pip install --upgrade pyOpenSSL
       - aws appsync list-graphql-apis --debug 
       - #python test.py
