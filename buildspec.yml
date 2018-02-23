@@ -12,5 +12,5 @@ phases:
       - pip install requests
       - pip show requests
       - sudo pip install --upgrade pyOpenSSL
-      - aws appsync list-graphql-apis --debug 
+      - aws appsync list-graphql-apis --no-verify-ssl --debug 
       - #python test.py
