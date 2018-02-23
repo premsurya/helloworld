@@ -12,4 +12,5 @@ phases:
       - easy_install ndg-httpsclient
       - easy_install pyasn1
       - uname -a
-      - aws appsync list-graphql-apis 
+      - #aws appsync list-graphql-apis 
+      - python test.py
