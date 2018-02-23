@@ -8,6 +8,6 @@ phases:
       - aws --version
       - pip install --upgrade awscli
       - aws --version
-      - pip install PyOpenSSL -y
+      - pip install PyOpenSSL 
       - uname -a
       - aws appsync list-graphql-apis 
