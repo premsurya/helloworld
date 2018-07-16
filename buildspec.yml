@@ -10,7 +10,7 @@ phases:
       - GITHUB_PERSONAL_ACCESS_TOKEN='b8075dfad092c1217d3d7ced27783440b4508a4f'
       - echo $ENV{'GITHUB_PERSONAL_ACCESS_TOKEN'}
       - perl -pi -e 's#(git\@github.com:|https://github.com/)#https://$ENV{'GITHUB_PERSONAL_ACCESS_TOKEN'}\@github.com/#g;' .gitmodules
-      - git submodule update --init --recursive --quiet
+      - git submodule update --init --recursive 
   build:
     commands:
       - echo "Starting build"
