@@ -11,6 +11,7 @@ phases:
     #  - echo $GITHUB_PERSONAL_ACCESS_TOKEN
     #  - perl -pi -e 's#(git\@github.com:|https://github.com/)#https://$ENV{'GITHUB_PERSONAL_ACCESS_TOKEN'}\@github.com/#g;' .gitmodules
       - ls -la
+      - rm -rf helloworld/
       - git clone https://github.com/premsurya/helloworld
       - ls -la
       - git submodule update --init --recursive 
