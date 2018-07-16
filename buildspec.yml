@@ -1,16 +1,16 @@
 version: 0.2
 
-
 phases:
+  install:
+    commands:
+      - pip install -U awscli
+  pre_build:
+    commands:
+      - echo "Updating git submodules"
+      - GITHUB_PERSONAL_ACCESS_TOKEN='b8075dfad092c1217d3d7ced27783440b4508a4f'
+      - echo $ENV{'GITHUB_PERSONAL_ACCESS_TOKEN'}
+      - perl -pi -e 's#(git\@github.com:|https://github.com/)#https://$ENV{'GITHUB_PERSONAL_ACCESS_TOKEN'}\@github.com/#g;' .gitmodules
+      - git submodule update --init --recursive --quiet
   build:
     commands:
-      - echo Entering Build.
-      - aws --version
-      - pip install --upgrade awscli
-      - aws --version
-      - pip install urllib3
-      - pip install requests
-      - pip show requests
-      - sudo pip install --upgrade pyOpenSSL
-      - aws appsync list-graphql-apis --no-verify-ssl --debug 
-      - #python test.py
+      - echo "Starting build"
