@@ -1,3 +1,3 @@
 [submodule "aws-static-site"]
 	path = aws-static-site
-	url = https://github.com/premsurya/aws-static-site.git
+	url = https://@github.com/premsurya/aws-static-site.git

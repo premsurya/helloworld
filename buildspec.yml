@@ -6,10 +6,10 @@ phases:
       - pip install -U awscli
   pre_build:
     commands:
-      - echo "Updating git submodules"
-      - GITHUB_PERSONAL_ACCESS_TOKEN='b8075dfad092c1217d3d7ced27783440b4508a4'
-      - echo $GITHUB_PERSONAL_ACCESS_TOKEN
-      - perl -pi -e 's#(git\@github.com:|https://github.com/)#https://$ENV{'GITHUB_PERSONAL_ACCESS_TOKEN'}\@github.com/#g;' .gitmodules
+    #  - echo "Updating git submodules"
+    #  - GITHUB_PERSONAL_ACCESS_TOKEN='b8075dfad092c1217d3d7ced27783440b4508a4'
+    #  - echo $GITHUB_PERSONAL_ACCESS_TOKEN
+    #  - perl -pi -e 's#(git\@github.com:|https://github.com/)#https://$ENV{'GITHUB_PERSONAL_ACCESS_TOKEN'}\@github.com/#g;' .gitmodules
       - ls -la
       - git submodule update --init --recursive 
   build:
