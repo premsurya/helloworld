@@ -1,3 +1,9 @@
 [submodule "aws-static-site"]
 	path = aws-static-site
 	url = https://@github.com/premsurya/aws-static-site.git
+[submodule "python-git"]
+	path = python-git
+	url = git@github.com:premsurya/python-git.git
+[submodule "pullreqtest"]
+	path = pullreqtest
+	url = git@github.com:premsurya/pullreqtest.git
